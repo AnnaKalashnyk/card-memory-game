@@ -1,0 +1,38 @@
+.Card {
+  box-sizing: border-box;
+  width: 110px;
+  height: 170px;
+  border-radius: 12px;
+  background-color: rgba(186, 166, 192, 0.8);
+  backdrop-filter: blur(4.8px);
+  -webkit-backdrop-filter: blur(4.8px);
+  background-size: auto 92%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid #f4d4f4;
+  box-shadow: inset 4px 5px 22px #f4d4f4;
+  &.sailor-moon {
+    background-image: url("../../assets/img/sailorMoon.png");
+  }
+  &.sailor-mercury {
+    background-image: url("../../assets/img/sailorMercury.png");
+  }
+  &.sailor-mars {
+    background-image: url("../../assets/img/sailorMars.png");
+  }
+  &.sailor-venus {
+    background-image: url("../../assets/img/sailorVenera.png");
+  }
+  &.sailor-jupiter {
+    background-image: url("../../assets/img/sailorJupiter.png");
+  }
+  &.sailor-saturn {
+    background-image: url("../../assets/img/sailorSaturn.png");
+  }
+  &.sailor-neptun {
+    background-image: url("../../assets/img/sailorNeptun.png");
+  }
+  &.sailor-uranus {
+    background-image: url("../../assets/img/sailorUranus.png");
+  }
+}
