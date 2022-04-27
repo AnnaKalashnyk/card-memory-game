@@ -1,9 +1,8 @@
 import React from 'react';
+import style from './Button.module.scss';
 
-const Button = props => {
-    let {buttonText, onClickHandler, buttonState} = props
-
-    return <button onClick={onClickHandler} disabled={buttonState === 'disabled'}>{buttonText}</button>
+const Button = ({buttonText, onClickHandler}) => {
+    return <button className={style.Button} onClick={onClickHandler}>{buttonText}</button>
 }
 
 export default Button;

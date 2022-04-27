@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import {createStore, compose, applyMiddleware} from 'redux'
-import {Provider} from 'react-redux'
-import rootReducer from './store/reducers/rootReducer'
-import thunk from 'redux-thunk'
+import {createStore, compose, applyMiddleware} from 'redux';
+import {Provider} from 'react-redux';
+import {Route, BrowserRouter as Router, Routes} from 'react-router-dom';
+import rootReducer from './store/reducers/rootReducer';
+import thunk from 'redux-thunk';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
@@ -24,7 +25,11 @@ const rootElement = document.getElementById('root')
 const root = ReactDOM.createRoot(rootElement)
 root.render(
     <Provider store={store}>
-        <App />
+        <Router>
+            <Routes>
+                <Route path='/' element={<App/>}/>
+            </Routes>
+        </Router>
     </Provider>
 );
 

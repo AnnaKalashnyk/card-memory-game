@@ -1,4 +1,4 @@
-import {combineReducers} from 'redux'
+import {combineReducers} from 'redux';
 import areaReducer from "./areaReducer";
 import stepsReducer from "./stepsReducer";
 

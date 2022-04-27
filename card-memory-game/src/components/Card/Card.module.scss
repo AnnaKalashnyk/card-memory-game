@@ -3,36 +3,69 @@
   width: 110px;
   height: 170px;
   border-radius: 12px;
-  background-color: rgba(186, 166, 192, 0.8);
+  background-color: rgba(255, 255, 255, 0.3);
   backdrop-filter: blur(4.8px);
   -webkit-backdrop-filter: blur(4.8px);
+   border: 1px solid #f4d4f4;
+  filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1));
+  cursor: pointer;
+  transition: transform 0.8s, box-shadow .22s;
+  transform-style: preserve-3d;
+  &.face-up {
+    transform: rotateY(180deg);
+  }
+  &:hover {
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+  }
+}
+.sailor-moon.flipped {
+  background-image: url("../../assets/img/sailorMoon.png");
+}
+.sailor-mercury.flipped {
+  background-image: url("../../assets/img/sailorMercury.png");
+}
+.sailor-mars.flipped {
+  background-image: url("../../assets/img/sailorMars.png");
+}
+.sailor-venus.flipped {
+  background-image: url("../../assets/img/sailorVenera.png");
+}
+.sailor-jupiter.flipped {
+  background-image: url("../../assets/img/sailorJupiter.png");
+}
+.sailor-saturn.flipped {
+  background-image: url("../../assets/img/sailorSaturn.png");
+}
+.sailor-neptun.flipped {
+  background-image: url("../../assets/img/sailorNeptun.png");
+}
+.sailor-uranus.flipped {
+  background-image: url("../../assets/img/sailorUranus.png");
+}
+
+.flipped, .unflipped {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   background-size: auto 92%;
   background-repeat: no-repeat;
   background-position: center;
-  border: 1px solid #f4d4f4;
-  box-shadow: inset 4px 5px 22px #f4d4f4;
-  &.sailor-moon {
-    background-image: url("../../assets/img/sailorMoon.png");
-  }
-  &.sailor-mercury {
-    background-image: url("../../assets/img/sailorMercury.png");
-  }
-  &.sailor-mars {
-    background-image: url("../../assets/img/sailorMars.png");
-  }
-  &.sailor-venus {
-    background-image: url("../../assets/img/sailorVenera.png");
-  }
-  &.sailor-jupiter {
-    background-image: url("../../assets/img/sailorJupiter.png");
-  }
-  &.sailor-saturn {
-    background-image: url("../../assets/img/sailorSaturn.png");
-  }
-  &.sailor-neptun {
-    background-image: url("../../assets/img/sailorNeptun.png");
-  }
-  &.sailor-uranus {
-    background-image: url("../../assets/img/sailorUranus.png");
+  transition: all .22s linear;
+}
+
+.unflipped {
+  background-image: url("../../assets/img/magic.png");
+  transition-delay: .05s;
+}
+.flipped {
+  transition-delay: .2s;
+}
+
+@media all and (max-width: 768px) {
+  .Card {
+    height: 140px;
+    width: 75px;
   }
 }

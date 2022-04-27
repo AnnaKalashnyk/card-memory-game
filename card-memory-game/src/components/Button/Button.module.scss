@@ -1,0 +1,35 @@
+.Button {
+  padding: 16px 24px;
+  min-width: 320px;
+  border: 1px solid #f4d4f4;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(4.8px);
+  -webkit-backdrop-filter: blur(4.8px);
+  filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1));
+  font-family: 'Titan One', cursive;
+  font-size: 28px;
+  text-transform: uppercase;
+  color: #AC3689;
+  text-shadow: 2px 2px 5px #ffe5fe;
+  box-shadow: none;
+  cursor: pointer;
+  &:hover {
+    box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+    &:before {
+      left: 100%;
+    }
+  }
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.6), transparent);
+    transition: all 450ms ease-out;
+  }
+}

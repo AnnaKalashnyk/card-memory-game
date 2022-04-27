@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Titan+One&display=swap');
+.App {
+  font-family: 'Titan One', cursive;
+  text-align: center;
+  background-image: url('assets/img/crystal.png'), linear-gradient(to left bottom, #ffcad4, #f4d4f4, #dbe3ff, #c3f2ff, #c0fdff);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  height: 100vh;
+  &__container {
+    max-width: 992px;
+    width: 96%;
+    margin: 0 auto;
+    &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-area {
+      padding: 35px 0;
+      > * + * {
+        margin-top: 20px;
+      }
+    }
+  }
+  &__header {
+    padding: 12px 0 16px 0;
+    background: rgba(255, 255, 255, 0.21);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.8px);
+    -webkit-backdrop-filter: blur(4.8px);
+    border: 1px solid rgba(234, 167, 185, 0.19);
+    filter: drop-shadow(0 2px 2px hsla(290, 100%, 20%, 1));
+  }
+  &__logo {
+    font-size: 36px;
+    color: #FFE5FE;
+    text-shadow: 3px 3px 7px #FB81D2;
+    text-decoration: none;
+  }
+  &__grid {
+    display: grid;
+    grid-gap: 16px;
+    grid-template-columns: repeat(8,1fr);
+  }
+  &__desc {
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+}
+@media all and (max-width: 992px){
+  .App {
+    height: auto;
+    min-height: 100vh;
+    &__grid {
+      grid-template-columns: repeat(4, 110px);
+      justify-content: center;
+    }
+  }
+}
+@media all and (max-width: 768px){
+  .App {
+    &__grid {
+      grid-template-columns: repeat(4, 75px);
+    }
+    &__logo {
+      font-size: 28px;
+    }
+  }
+}
