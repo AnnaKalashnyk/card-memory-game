@@ -92,9 +92,11 @@ const App = () => {
                     <Button
                         buttonText={buttonText}
                         onClickHandler={() => {
+                            dispatch(resetSteps())
                             setButtonText('restart')
                             setStart(true)
-                            setStep(resetSteps().payload)
+                            setStep(steps)
+                            // setStep(resetSteps().payload)
                             setWinningArray([])
                             return dispatch(startGame(cards))
 

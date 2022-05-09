@@ -54,8 +54,6 @@ export function shuffleCards(array) {
 
 export const stepInc = (steps) => {
     let payload = steps + 1
-    // payload++
-    console.log(payload)
     return {
         type: STEP_INC,
         payload
@@ -63,9 +61,7 @@ export const stepInc = (steps) => {
 }
 
 export const resetSteps = () => {
-    let payload = 0
     return {
-        type: RESET_STEPS,
-        payload
+        type: RESET_STEPS
     }
 }

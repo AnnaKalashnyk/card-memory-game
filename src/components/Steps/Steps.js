@@ -1,6 +1,5 @@
 import React from 'react';
 import style from './Steps.module.scss'
-import {useSelector} from "react-redux";
 
 const Steps = ({steps}) => {
     return (
