@@ -2,7 +2,7 @@
 
 ***[Live Project](https://memory-card-game-sailormoon.web.app/)***
 
-![Memory Card Game](https://github.com/AnnaKalashnyk/card-memory-game/tree/main/assets-readme/SailorMoon.jpg)
+![Memory Card Game](https://raw.githubusercontent.com/AnnaKalashnyk/card-memory-game/main/assets-readme/SailorMoon.jpg)
 
 ## Object games
 Find the most pairs of matching cards.
