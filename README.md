@@ -1,10 +1,12 @@
 # Memory card game
 
-***[Live Project](https://memory-card-game-sailormoon.web.app/)***
 
 ![Memory Card Game](https://raw.githubusercontent.com/AnnaKalashnyk/card-memory-game/main/assets-readme/SailorMoon.jpg)
 
+####***[Live Project](https://memory-card-game-sailormoon.web.app/)***
+
 ## Object games
+
 Find the most pairs of matching cards.
 
 ## Tools
