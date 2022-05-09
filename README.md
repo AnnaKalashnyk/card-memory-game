@@ -3,7 +3,7 @@
 
 ![Memory Card Game](https://raw.githubusercontent.com/AnnaKalashnyk/card-memory-game/main/assets-readme/SailorMoon.jpg)
 
-####***[Live Project](https://memory-card-game-sailormoon.web.app/)***
+#### ***[Live Project](https://memory-card-game-sailormoon.web.app/)***
 
 ## Object games
 
